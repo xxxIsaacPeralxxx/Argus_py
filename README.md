@@ -30,3 +30,16 @@ Tambi\u00e9n puede invocarse directamente el m\u00f3dulo principal:
 python fls_intel_analyzer.py entrada.txt salida.json --t-norm min
 ```
 
+## Uso en VS Code
+
+1. Abra la carpeta del proyecto en VS Code mediante **File > Open Folder**.
+2. Seleccione un intérprete de Python con los paquetes de `requirements.txt` desde la paleta de comandos (`Ctrl+Shift+P` → **Python: Select Interpreter**).
+3. Si existe un archivo `.vscode/launch.json`, ejecute sus configuraciones desde la vista **Run and Debug**.
+
+En la terminal integrada (`Terminal` → `New Terminal`), instale las dependencias y descargue los modelos de spaCy:
+
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
