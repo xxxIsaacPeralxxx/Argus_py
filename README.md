@@ -56,3 +56,10 @@ pytest
 ```
 
 La prueba genera un JSON con nodos y aristas, verificando que los valores `Aa`, `Ar` y `Au` de cada nodo suman 1.
+
+Para regenerar manualmente el archivo de salida de ejemplo:
+
+```bash
+python fls_intel_analyzer.py tests/sample_text.txt tests/sample_output.json
+```
+
