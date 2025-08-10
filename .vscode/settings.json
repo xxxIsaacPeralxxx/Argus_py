@@ -1,0 +1,5 @@
+{
+  "python.defaultInterpreterPath": "/root/.pyenv/versions/3.12.10/bin/python3",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true
+}
