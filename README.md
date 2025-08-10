@@ -43,3 +43,22 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
+
+## Pruebas
+
+Se incluye un texto de ejemplo en `tests/sample_text.txt` y un resultado de referencia en `tests/sample_output.json`.
+Para ejecutar la prueba automatizada:
+
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+pytest
+```
+
+La prueba genera un JSON con nodos y aristas, verificando que los valores `Aa`, `Ar` y `Au` de cada nodo suman 1.
+
+Para regenerar manualmente el archivo de salida de ejemplo:
+
+```bash
+python fls_intel_analyzer.py tests/sample_text.txt tests/sample_output.json
+```
