@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run argus.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/argus.py",
+      "args": [
+        "${workspaceFolder}/sample.txt",
+        "--source-reliability",
+        "0.75",
+        "--tnorm",
+        "min"
+      ]
+    },
+    {
+      "name": "Run fls_intel_analyzer.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/fls_intel_analyzer.py",
+      "args": [
+        "${workspaceFolder}/sample.txt",
+        "${workspaceFolder}/analysis_bundle.json",
+        "--t-norm",
+        "product"
+      ]
+    }
+  ]
+}
